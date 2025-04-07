@@ -2,6 +2,7 @@
 
 Sorting Visualizer is a React-based web application that visually demonstrates various sorting algorithms. It allows users to select a sorting algorithm, adjust the speed and number of elements, and observe the sorting process in real-time.
 
+## Live link : https://sort--visualizer.vercel.app/
 ## Features
 
 - Visualize popular sorting algorithms:

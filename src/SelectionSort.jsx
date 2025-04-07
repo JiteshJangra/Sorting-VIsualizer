@@ -25,10 +25,8 @@ const selectionSort = async (
       await new Promise((resolve) =>
         setTimeout(resolve, 300 - speedRef.current)
       );
-      // console.log( j)
       if (arr[j] < arr[minIndex]) {
         minIndex = j;
-        // setActive(j);
       }
     }
 

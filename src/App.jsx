@@ -32,7 +32,6 @@ function App() {
     setSorting(true);
     cancelSorting.current = false;
     let arr = [...nums];
-    // console.log( algorithm)
     if (algorithm == "merge")
       await mergeSort(
         arr,
@@ -99,9 +98,7 @@ function App() {
     const interval = setTimeout(() => {
       cancelSorting.current = true;
       setActive(null);
-      console.log(length);
       const newArray = generateRandomArray(length);
-      //temp = newArray.sort((a, b) => a - b);
       setNums(newArray);
     }, time);
 
