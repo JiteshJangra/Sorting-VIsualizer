@@ -152,7 +152,7 @@ function App() {
               <input
                 type="range"
                 min="10"
-                max="1000"
+                max="3000"
                 step="10"
                 className="border-5 border-red-100 rounded accent-black"
                 value={length}
