@@ -43,7 +43,7 @@ function App() {
         setActive,
         setActive1,
         cancelSorting
-      )
+      );
     else if (algorithm == "bubble")
       await bubbleSort(
         arr,
@@ -52,7 +52,7 @@ function App() {
         setActive,
         setActive1,
         cancelSorting
-      )
+      );
     else if (algorithm == "quick")
       await quickSort(
         arr,
@@ -63,7 +63,7 @@ function App() {
         setActive,
         setActive1,
         cancelSorting
-      )
+      );
     else if (algorithm == "Insertion")
       await InsertionSort(
         arr,
@@ -72,12 +72,15 @@ function App() {
         setActive,
         setActive1,
         cancelSorting
-      )
+      );
     else if (algorithm == "Selection")
       await selectionSort(
         arr,
         speedRef,
-        nums,active,active1,sorting,
+        nums,
+        active,
+        active1,
+        sorting,
         setNums,
         setActive,
         setActive1,
@@ -222,13 +225,7 @@ function App() {
         </div>
       </div>
 
-      <Bars
-        nums={nums}
-        
-        active={active}
-        active1={active1}
-        sorting={sorting}
-      />
+      <Bars nums={nums} active={active} active1={active1} sorting={sorting} />
     </div>
   );
 }
