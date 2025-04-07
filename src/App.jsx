@@ -6,6 +6,7 @@ import quickSort from "./QuickSort";
 import InsertionSort from "./InsertionSort";
 import selectionSort from "./SelectionSort";
 import { SpeedInsights } from "@vercel/speed-insights/react";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   const [length, setLength] = useState(50);
@@ -224,7 +225,8 @@ function App() {
       </div>
 
       <Bars nums={nums} active={active} active1={active1} sorting={sorting} />
-      <SpeedInsights/>
+      <SpeedInsights />
+      <Analytics/>
     </div>
   );
 }
